@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<link rel="stylesheet" href="PANEL.CSS">
+</head>
+<body bgcolor="cyan">
+	
+		<div class="bts">
+		<marquee behavior="alternate" direction="left"><center>QUIZ<hr></center></MARQUEE>
+		<h1>1.WHAT IS THE CAPITAL OF INDIA?</h1><br><br><br>
+
+	<form>
+<br>
+
+		<input type="RADIO" name="H" id="Q11">HARIYANA<br>
+
+		<input type="RADIO" name="H" id="Q12">KERALA<br>
+
+		<input type="RADIO" name="H" id="Q13">NEW DELHI<br>
+
+		<input type="RADIO" name="H" id="Q14">GOA<br>
+
+
+       <h1>2.WHAT IS THE NATIONAL ANIMAL OF INDIA?</h1><br><br><br>
+
+
+
+       <input type="RADIO" name="N" id="Q21">KADUVA<br>
+
+       <input type="RADIO" name="N" id="Q22">KORANGAN<br>
+
+       <input type="RADIO" name="N" id="Q23">PULI<br>
+
+       <input type="RADIO" name="N" id="Q24">PULLI PULI<br>
+
+
+
+
+       <h1>3.WHAT IS THE NATIONAL BIRD OF INDIA?</h1><br><br><br>
+
+       <input type="RADIO" name="P" id="Q31">KAKKA<br>
+       <input type="RADIO" name="P" id="Q32">KOZHI<br>
+       <input type="RADIO" name="P" id="Q33">MAYIL<br>
+       <input type="RADIO" name="P" id="Q34">KUYIL<br>
+       	<br><br><br>
+       <input type="BUTTON" id="hi"  name="submit" value="SUBMIT" onclick="result()">
+       <input type="RESET" id="let" value="RESET">
+   </div>
+	</form>
+	<script>
+	
+		function result(){
+			score=0
+			if (document.getElementById("Q13").checked)
+				score+=1
+			if (document.getElementById("Q21").checked)
+				score+=1
+			if (document.getElementById("Q33").checked)
+				score+=1
+			alert("your score is:"+score)
+		}
+		
+	</script>
+
+
+</body>
+</html>
